@@ -1,0 +1,32 @@
+run = True
+x = 20
+prime_list = [2,3,5,7]
+z = 0
+while run:
+
+  for n in range(z+1,x):
+    for i in prime_list:
+      if n%i == 0:
+        continue
+    if n % 2 == 0 and n != 2:
+      continue
+    elif n % 3 == 0 and n != 3:
+      continue
+    elif n % 4 == 0 and n != 4:
+      continue
+    elif n % 5 == 0 and n != 5:
+      continue
+    elif n % 6 == 0 and n != 6:
+      continue
+    elif n % 7 == 0 and n!= 7:
+      continue
+    elif n % 8 == 0 and n != 7:
+      continue
+    elif n % 9 == 0 and n != 9:
+      continue
+    else:
+      prime_list.append(n)
+      l = len(prime_list)-1
+      z = prime_list[l]
+    x += 5
+  print(prime_list)
